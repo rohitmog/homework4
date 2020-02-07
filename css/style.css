@@ -37,7 +37,7 @@ nav a:hover{
   text-decoration: underline;
 }
 .skip a{
-  top: -40;
+  top: -80;
 }
 
 .skip a:focus{
@@ -59,15 +59,6 @@ link to the exact top of the page.*/
 /*Add the selector and code to put a 2px black 
 border around all elements in focus.*/
 
-
-
-
-.container{
-  display: grid;
-  grid-template-columns: 100px 400px 100px;
-  grid-template-rows: 30px, auto, auto, auto, auto, auto 100px;
-  grid-row-gap: 15px;
-}
 footer{
   background-color: black;
   color: white;
@@ -113,6 +104,16 @@ header p{
   /*Your code here */
   /* See documentation for mobile view */
 
+}
+
+
+
+.container{
+  display: grid;
+  grid-template-columns: 100px 400px 100px;
+  grid-template-rows: 30px auto auto auto auto auto 100px;
+  
+  grid-row-gap: 15px;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
@@ -163,8 +164,8 @@ header p{
   .container{
   /*Your code here */
     display: grid;
-    grid-template-columns: 50px, auto, 500px, auto, 50px;
-    grid-template-rows: 70px, 400px, 400px, 400px, 400px, 400px, 100px;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
   /* See documentation for desktop view */ 
   }
 
