@@ -96,17 +96,19 @@ header{
   grid-column: 1 / -1;
   grid-row: 2 / span 1;
   background-image: url(../images/header.jpg);
-  background-color: black;
   /* Your code here */
   /* Set background-image to header.jpg in the images folder */
   /* Span one row */
 }
-
+header h1{
+  background-color: black;
+}
 header p{
   color: white;
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
+  background-color: black;
   
 }
 .about, .method, .clients, .contact{
