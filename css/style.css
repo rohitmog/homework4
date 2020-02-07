@@ -36,28 +36,35 @@ nav a{
 nav a:hover{
   text-decoration: underline;
 }
-.skip a{
-  top: -80;
-}
 
-.skip a:focus{
+
+.skip a{
   background: white;
   left: 0;
   padding: 6px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-}
 
+  /*Your code here - position relative to the parent */
+  /*Your code here - place 40px higher */
+  position: absolute;
+  top: -400px;
+}
 
 /*Your code here*/
 /*Add the selector and rule to move the skip 
 link to the exact top of the page.*/
- 
+.skip a:focus{
+  top: 0;
+}
 
 /*Your code here*/
 /*Add the selector and code to put a 2px black 
 border around all elements in focus.*/
+:focus{
+  border: 2px solid black;
+}
 
 footer{
   background-color: black;
@@ -77,6 +84,7 @@ nav{
   /*Your code here*/
   /*Span the top row*/
 }
+
 header{
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
@@ -173,7 +181,6 @@ header p{
     background-color: #ddd;
     text-align: right;
     padding: 35px 0px;
-    align-self: center;
   }
 
   .about, .clients, .method-image, .contact-image{
